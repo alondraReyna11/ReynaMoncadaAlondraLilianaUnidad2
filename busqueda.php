@@ -1,4 +1,6 @@
-
+<?php include 'cnn.php';
+require_once 'cdn.html';
+   ?>
 <!DOCTYPE html>
 <html>
 <head>
