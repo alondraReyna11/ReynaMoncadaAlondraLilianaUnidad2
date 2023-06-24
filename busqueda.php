@@ -67,7 +67,7 @@ include 'cnn.php';
 
 $busqueda = $_POST['busqueda'];
 
-$query = "SELECT * FROM lugaresturisticos WHERE municipio LIKE '%$busqueda%'";
+$query = "SELECT * FROM lugaresturisticoS WHERE municipio LIKE '%$busqueda%'";
 $consulta = mysqli_query($con, $query);
 
 
