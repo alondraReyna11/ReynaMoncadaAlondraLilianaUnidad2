@@ -4,7 +4,7 @@ require_once 'cdn.html';
 <!DOCTYPE html>
 <html>
 <head>
-  <title>YABtravels || viajes< </title>
+  <title>YABtravels viajes< </title>
 
    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -67,7 +67,7 @@ include 'cnn.php';
 
 $busqueda = $_POST['busqueda'];
 
-$query = "SELECT * FROM lugaresturisticoS WHERE municipio LIKE '%$busqueda%'";
+$query = "SELECT * FROM lugaresturisticos WHERE municipio LIKE '%$busqueda%'";
 $consulta = mysqli_query($con, $query);
 
 
@@ -100,37 +100,45 @@ if ($row = mysqli_fetch_array($consulta)) {
                  
 <center>
   <div class='card text-white mb-3 border-light mb-1'  style= "width:43rem;" style= 'background: black;'>
-                      <div class='card-header' style= "background: #b3ae11
-;"><h4 style="color:black; float:center;">YAB travels </h4>
+                      <div class='card-header' style= "    /* fallback for old browsers */
+    background: #8db139;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(141,177,57,0.5), rgba(68,167,81,0.5));
+  
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(141,177,57,0.5), rgba(68,167,81,0.5))"><h4 style="color:black;">YAB travels </h4>
                       </div>
                     
   <div class="row g-0 " style="  ">
     <div class="col-md-3">
-        <img src="img/logo.png " style="  margin-top: 10px;" width="260px" height="360px">
+        <img src="<?php echo $campo['img']; ?>" style="  margin-top: 10px;  margin-left: 13px; border-radius: 10%; " width="260px" height="360px">
     </div>
 
 
 
-    <div class="col-sm-35 col-md-8 col-lg-15 col-xl-15">
+    <div class="col-sm-40 col-md-9 col-lg-20 col-xl-16">
       <div class="card-body">
         
         <p class="card-text">
 
   <p class="sub-title" style="color: darkgreen; margin-top: 10px; margin-left: -163px;">ESTADO:</p>
-  <p class="title"style="color: black; "><?php echo $campo['estado']; ?></p>
+  <p class="title"style="color: black; text-align: justify; margin-left: 90px;  margin-right: 10px;  "><?php echo $campo['estado']; ?></p>
 
 
-  <p class="sub-title" style="color: darkgreen; margin-top: 10px; margin-left: -180px;">MUNICIPIO:</p>
-  <p class="title"style="color: black;"> <?php echo $campo['municipio']; ?></p>
+  <p class="sub-title" style="color: darkgreen; margin-top: 10px; margin-left: -162px;">  MUNICIPIO:</p>
+  <p class="title"style="color: black; text-align: justify; margin-left: 90px;  margin-right: 10px; "> <?php echo $campo['municipio']; ?></p>
 
 
-   <p class="sub-title" style="color: darkgreen;margin-top: 10px;  margin-left: -195px;">LUGAR:</p>
-   <BR></BR>
-   <p class="title"style="color: black;margin-top: -28px; margin-left: -8px;"><?php echo $campo['lugar_turistico']; ?></p>
+   <p class="sub-title" style="color: darkgreen;margin-top: 10px;  margin-left: -195px; ">LUGAR:</p>
+   <BR>
+   <p class="title"style="color: black;margin-top: -20px; margin-left: -8px;  text-align: justify; margin-left: 90px;  margin-right: 10px;"><?php echo $campo['lugar_turistico']; ?></p>
 
 
-    <p class="sub-title" style="color: darkgreen; margin-top: 10px; margin-left: 250px;margin-top: -30px; ">$</p>
-    <p class="title"style="color: black;margin-top: -28px; margin-left: 365px;"><?php echo $campo['precio']; ?></p>
+   <div style="display: flex; text-align: justify;  margin-left: 240px;  margin-right: 10px;">
+  <p class="sub-title" style="color: darkgreen; margin-top: 10px; margin-left: -162px;">$</p>
+  <p class="title" style="color: black; margin-top: 8px; margin-left: 10px;"><?php echo $campo['precio']; ?></p>
+</div>
 
       </div>
 
@@ -167,5 +175,4 @@ if ($row = mysqli_fetch_array($consulta)) {
 
 </body>
 </html>
-
 
