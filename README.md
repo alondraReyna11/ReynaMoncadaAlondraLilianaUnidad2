@@ -1,7 +1,8 @@
 # ReynaMoncadaAlondraLilianaUnidad2
 Evento del mouse cambia de color el botón de info cuando pasas el cursor
 
-![image](https://github.com/alondraReyna11/ReynaMoncadaAlondraLilianaUnidad2/assets/126124032/be009c40-d922-412b-aea4-f9b6b11eb33b)
+![image](https://github.com/alondraReyna11/ReynaMoncadaAlondraLilianaUnidad2/assets/126217488/d0f52e2d-bc57-4ddc-9e90-b9a543743e94)
+
 
 
 
