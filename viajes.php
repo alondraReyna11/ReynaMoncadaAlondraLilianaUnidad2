@@ -1,9 +1,4 @@
-<?php
-session_start();
-require_once 'cdn.html';
 
-include 'cnn.php';
-?>
 <!DOCTYPE html>
 <html>
 <head>
