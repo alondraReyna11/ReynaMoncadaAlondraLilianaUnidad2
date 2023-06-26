@@ -39,7 +39,7 @@ Animación de carrusel para las imágenes y una marquesina para el texto
 
 Buscador con función síncrona
 
-![image](https://github.com/alondraReyna11/ReynaMoncadaAlondraLilianaUnidad2/assets/126124032/9794b193-1f4e-461a-b483-48f6c981beb2)
+![image](https://github.com/alondraReyna11/ReynaMoncadaAlondraLilianaUnidad2/assets/126217488/895c728b-da21-460b-a349-0b553ab7f560)
 
 
 
