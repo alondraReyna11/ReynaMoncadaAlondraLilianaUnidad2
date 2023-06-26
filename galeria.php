@@ -125,7 +125,7 @@ include 'cnn.php';
               <h5 class="card-title mb-3">Real de catorce</h5>
             </a>
             <a href="" class="text-reset">
-              <p>Pueblo majico</p>
+              <p>Pueblo mágico</p>
             </a>
             <h6 class="mb-3">Desde: $8000</h6>
           </div>
