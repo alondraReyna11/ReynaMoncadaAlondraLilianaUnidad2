@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 <html>
 	<head>
-		<title>Google Recapcha</title>
+		<title>Registro de Datos</title>
     <link
     
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
